@@ -1,0 +1,25 @@
+// ------------------------------------
+// Components > Signup / Editor
+// ------------------------------------
+
+.kg-signup-card.kg-width-full {
+  width: 100vw;
+}
+
+.kg-content-wide {
+  .kg-signup-card-content {
+    width: 100%;
+    margin: auto;
+    padding: 0 var(--space-16);
+  }
+
+  &:not(.kg-layout-split) .kg-signup-card-content {
+    max-width: calc(var(--grid-width) - var(--space-80));
+  }
+
+  &.kg-layout-split .kg-signup-card-content {
+    @include mq($from: desktop) {
+      max-width: calc(var(--grid-width) - var(--space-80));
+    }
+  }
+}
