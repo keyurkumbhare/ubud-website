@@ -1,4 +1,4 @@
-name: Ubud Theme Deploy
+name: Theme Deploy
 on:
   push:
     branches:
